@@ -127,12 +127,12 @@ mqtt:
   port: MQTT_BROKER_PORT
 ```
 
-By default, Snips runs an MQTT broker on port 9898. So if we wish to use this broker, and if Snips and Home Assistant run on the same device, the entry will look as follows:
+By default, Snips runs an MQTT broker on port 1883. So if we wish to use this broker, and if Snips and Home Assistant run on the same device, the entry will look as follows:
 
 ```yaml
 mqtt:
   broker: 127.0.0.1
-  port: 9898
+  port: 1883
 ```
 
 Alternatively, MQTT can be configured to bridge messages between servers if using a custom MQTT broker such as [mosquitto](https://mosquitto.org/).
